@@ -1,0 +1,14 @@
+#include <TXLib.h>
+#include <stdio.h>
+#include <string.h>
+
+int main(void){
+   char s1[20] = "thh";
+   char s2[] = "nuw";
+   printf("%d %s", strcpy(s1, s2), s1);
+}
+size_t strlen(const char s[]);
+int puts(const char *s);
+void strcpy(char* line_into_which_it_is_copied, char* line_that_is_being_copied);
+char* strcat(char* line_to_which_stick, char* string_that_sticks);
+int strcmp(const char str1[], const char str2[]);

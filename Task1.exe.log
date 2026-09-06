@@ -1,0 +1,316 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x4C08 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00414FFE in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/Kate/Desktop/downloads/TX/TXLib.h:11343
+# 1 0x76798F03 in C:\WINDOWS\System32\msvcrt.dll: raise()
+# 2 0x7679D3CB in C:\WINDOWS\System32\msvcrt.dll: abort()
+# 3 0x76799D47 in C:\WINDOWS\System32\msvcrt.dll: assert()
+
+# 4 0x00436077 in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: my_strcpy() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/Task1.cpp:80:
+
+     78: void my_strcpy(char* line_into_which_it_is_copied, const char* line_that_is_being_copied)
+     79: {
+=>   80:    assert(my_strlen(line_into_which_it_is_copied) >= my_strlen(line_that_is_being_copied) + 1);
+     81:    unsigned int i = 0;
+     82:    while ((line_into_which_it_is_copied[i] = line_that_is_being_copied[i]) != '\0')
+
+# 5 0x00435E63 in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/Task1.cpp:31:
+
+     29:    char sticking_line[] = "Goodbye";
+     30:    printf("Before copying: '%s'\n", s);
+=>   31:    my_strcpy(s, sticking_line);
+     32:    printf("After copying: '%s'\n\n", s);
+     33: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:01:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:01:47
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x76B0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00414FFE in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/Kate/Desktop/downloads/TX/TXLib.h:11343
+# 1 0x76798F03 in C:\WINDOWS\System32\msvcrt.dll: raise()
+# 2 0x7679D3CB in C:\WINDOWS\System32\msvcrt.dll: abort()
+# 3 0x76799D47 in C:\WINDOWS\System32\msvcrt.dll: assert()
+
+# 4 0x00435F12 in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/Task1.cpp:39:
+
+     37:    char cat[] = " CAT";
+     38:    printf("Before sticking: '%s'\n", s);
+=>   39:    assert(my_strlen(s) + my_strlen(cat) + 1 <= sizeof(s));
+     40:    my_strcat(s, cat);
+     41:    printf("After sticking: '%s'\n\n", s);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:04:23, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:04:28
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x4CBC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00414FFE in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/Kate/Desktop/downloads/TX/TXLib.h:11343
+# 1 0x76798F03 in C:\WINDOWS\System32\msvcrt.dll: raise()
+# 2 0x7679D3CB in C:\WINDOWS\System32\msvcrt.dll: abort()
+# 3 0x76799D47 in C:\WINDOWS\System32\msvcrt.dll: assert()
+
+# 4 0x00435F12 in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/Task1.cpp:39:
+
+     37:    char cat[] = " CAT";
+     38:    printf("Before sticking: '%s'\n", s);
+=>   39:    assert(my_strlen(s) + my_strlen(cat) + 1 <= sizeof(s));
+     40:    my_strcat(s, cat);
+     41:    printf("After sticking: '%s'\n\n", s);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:04:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:04:47
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x760C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00414FFE in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/Kate/Desktop/downloads/TX/TXLib.h:11343
+# 1 0x76798F03 in C:\WINDOWS\System32\msvcrt.dll: raise()
+# 2 0x7679D3CB in C:\WINDOWS\System32\msvcrt.dll: abort()
+# 3 0x76799D47 in C:\WINDOWS\System32\msvcrt.dll: assert()
+
+# 4 0x00435F12 in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/Task1.cpp:39:
+
+     37:    char cat[] = " CAT";
+     38:    printf("Before sticking: '%s'\n", s);
+=>   39:    assert(my_strlen(s) + my_strlen(cat) + 1 <= sizeof(s));
+     40:    my_strcat(s, cat);
+     41:    printf("After sticking: '%s'\n\n", s);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:39:23, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:39:28
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x22F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00414FFE in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/Kate/Desktop/downloads/TX/TXLib.h:11343
+# 1 0x76798F03 in C:\WINDOWS\System32\msvcrt.dll: raise()
+# 2 0x7679D3CB in C:\WINDOWS\System32\msvcrt.dll: abort()
+# 3 0x76799D47 in C:\WINDOWS\System32\msvcrt.dll: assert()
+
+# 4 0x00435F12 in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/Task1.cpp:40:
+
+     38:    char cat[] = " CAT";
+     39:    printf("Before sticking: '%s'\n", s);
+=>   40:    assert(my_strlen(s) + my_strlen(cat) + 1 <= sizeof(s));
+     41:    my_strcat(s, cat);
+     42:    printf("After sticking: '%s'\n\n", s);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:40:27, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:40:32
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x1774 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00414FFE in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/Kate/Desktop/downloads/TX/TXLib.h:11343
+# 1 0x76798F03 in C:\WINDOWS\System32\msvcrt.dll: raise()
+# 2 0x7679D3CB in C:\WINDOWS\System32\msvcrt.dll: abort()
+# 3 0x76799D47 in C:\WINDOWS\System32\msvcrt.dll: assert()
+
+# 4 0x00435F12 in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/Task1.cpp:39:
+
+     37:    char cat[] = " CAT";
+     38:    printf("Before sticking: '%s'\n", s);
+=>   39:    assert(my_strlen(s) + my_strlen(cat) + 1 <= sizeof(s));
+     40:    my_strcat(s, cat);
+     41:    printf("After sticking: '%s'\n\n", s);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:40:56, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:41:01
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x9D8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00414FFE in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: (anonymous namespace)::TX::_txOnSignal() at C:/Users/Kate/Desktop/downloads/TX/TXLib.h:11343
+# 1 0x76798F03 in C:\WINDOWS\System32\msvcrt.dll: raise()
+# 2 0x7679D3CB in C:\WINDOWS\System32\msvcrt.dll: abort()
+# 3 0x76799D47 in C:\WINDOWS\System32\msvcrt.dll: assert()
+
+# 4 0x00435F12 in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/Task1.cpp:39:
+
+     37:    char cat[] = " CAT";
+     38:    printf("Before sticking: '%s'\n", s);
+=>   39:    assert(my_strlen(s) + my_strlen(cat) + 1 <= sizeof(s));
+     40:    my_strcat(s, cat);
+     41:    printf("After sticking: '%s'\n\n", s);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:41:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:41:51
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\Task1.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------

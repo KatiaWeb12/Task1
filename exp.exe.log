@@ -1,0 +1,264 @@
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767BEE84 в функции ungetwc(). Попытка прочесть данные по адресу 0xFFFFFFFE в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txUnhandledExceptionFilter(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x6B34 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x767BEE84 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x767B844B in C:\WINDOWS\System32\msvcrt.dll: printf()
+
+# 2 0x00435DFB in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/exp.cpp:8:
+
+      6:    char s1[20] = "thh";
+      7:    char s2[] = "nuw";
+=>    8:    printf("%d %s, %s", strcpy(s1, s2)), s1, s2;
+      9: }
+     10: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 16:26:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 16:26:55
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767BEE84 в функции ungetwc(). Попытка прочесть данные по адресу 0xFFFFFFFE в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txUnhandledExceptionFilter(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x6B34 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x767BEE84 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x767B844B in C:\WINDOWS\System32\msvcrt.dll: printf()
+
+# 2 0x00435DFB in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/exp.cpp:8:
+
+      6:    char s1[20] = "thh";
+      7:    char s2[] = "nuw";
+=>    8:    printf("%d %s, %s", strcpy(s1, s2)), s1, s2;
+      9: }
+     10: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 16:26:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 16:26:55
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767BEE84 в функции ungetwc(). Попытка прочесть данные по адресу 0x00000008 в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txUnhandledExceptionFilter(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x7C0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x767BEE84 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x767B844B in C:\WINDOWS\System32\msvcrt.dll: printf()
+
+# 2 0x00435DCB in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/exp.cpp:7:
+
+      5: int main(void){
+      6:    char s[8] = "hello";
+=>    7:    printf("%s", sizeof(s));
+      8: }
+      9: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:05:52, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:05:56
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767BEE84 в функции ungetwc(). Попытка прочесть данные по адресу 0x00000008 в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txUnhandledExceptionFilter(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x7C0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x767BEE84 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x767B844B in C:\WINDOWS\System32\msvcrt.dll: printf()
+
+# 2 0x00435DCB in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/exp.cpp:7:
+
+      5: int main(void){
+      6:    char s[8] = "hello";
+=>    7:    printf("%s", sizeof(s));
+      8: }
+      9: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:05:52, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:05:56
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767BEE84 в функции ungetwc(). Попытка прочесть данные по адресу 0x00000008 в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txUnhandledExceptionFilter(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x368C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x767BEE84 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x767B844B in C:\WINDOWS\System32\msvcrt.dll: printf()
+
+# 2 0x00435DCB in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/exp.cpp:7:
+
+      5: int main(void){
+      6:    char s[8] = "hello";
+=>    7:    printf("%s", sizeof(s));
+      8: }
+      9: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:06:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:06:13
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x767BEE84 в функции ungetwc(). Попытка прочесть данные по адресу 0x00000008 в модуле C:\WINDOWS\System32\msvcrt.dll. Спасибо _txUnhandledExceptionFilter(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400], Instance: 0x005101DC (32-bit), Flags: Cmdre0, Thread: 0x368C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x767BEE84 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
+# 1 0x767B844B in C:\WINDOWS\System32\msvcrt.dll: printf()
+
+# 2 0x00435DCB in C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe: main() at C:/Users/Kate/Desktop/Дединский СИ Tasks/Task1/exp.cpp:7:
+
+      5: int main(void){
+      6:    char s[8] = "hello";
+=>    7:    printf("%s", sizeof(s));
+      8: }
+      9: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 175, Date: 2025-12-31 23:02:50 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\Kate\Desktop\downloads\TX\TXLib.h
+Compiled:	Sep  6 2026 17:06:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 06 2026 17:06:13
+
+Run file:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1\exp.exe
+Directory:	C:\Users\Kate\Desktop\Дединский СИ Tasks\Task1
+
+--------------------------------------------------
